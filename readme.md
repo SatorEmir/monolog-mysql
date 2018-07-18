@@ -52,4 +52,4 @@ DB_LOG_CONNECTION=mysql
 
 Based on:
 
-- [Pedro Fornaza] (https://github.com/pedrofornaza/monolog-mysql)
+- [Mark Hilton] (https://github.com/markhilton/monolog-mysql)
