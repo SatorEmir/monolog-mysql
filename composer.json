@@ -10,7 +10,8 @@
         "email": "sator_e@hotmail.com"
     }],
     "require": {
-        "php": ">=5.5.9"
+        "php": ">=5.5.9",
+        "webpatser/laravel-uuid": "^2.2"
     },
     "autoload": {
         "psr-0": {
