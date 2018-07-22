@@ -6,6 +6,7 @@ use DB;
 use Illuminate\Support\Facades\Auth;
 use Monolog\Logger;
 use Monolog\Handler\AbstractProcessingHandler;
+use Webpatser\Uuid\Uuid;
 
 class MysqlHandler extends AbstractProcessingHandler
 {
@@ -30,7 +31,7 @@ class MysqlHandler extends AbstractProcessingHandler
             'level'       => $record['level'],
             'level_name'  => $record['level_name'],
             'context'     => json_encode($record['context']),
-            'request_id'  => request()->requesr_id,
+            'request_id'  => request()->request_id,
             'created_at'  => $record['datetime']->format('Y-m-d H:i:s')
         ];
 

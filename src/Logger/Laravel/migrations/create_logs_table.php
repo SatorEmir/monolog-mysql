@@ -15,8 +15,6 @@ class CreateLogsTable extends Migration
         Schema::create(
             env('DB_LOG_TABLE', 'logs'),
             function (Blueprint $table) {
-                $table->engine = 'InnoDB';
-
                 $table->uuid('id');
                 $table->string('instance')->index();
                 $table->string('channel')->index();
